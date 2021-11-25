@@ -5,10 +5,13 @@ viagem_curta=0.5
 viagem_longe=0.45
 preco_passagem = 0
 distancia = float(input("Informe o valor da distancia em km:"))
-if (distancia > 200):
-    preco_passagem = distancia * viagem_curta
-else:
-    preco_passagem = distancia * viagem_longe
-    
-print("O preço da passagem será:",preco_passagem)
+#Função para calcular o preço da passagem
+def calcula_preco(valor):
+    if (distancia > 200):
+        valor = distancia * viagem_curta
+    else:
+        valor = distancia * viagem_longe
+    return valor
+
+print("O preço da passagem será:",calcula_preco(distancia))
     
