@@ -16,9 +16,9 @@ def menor_numero(n1,n2,n3):
         menor = n3
     return menor
 
-n1= input("Informe o 1ª numero:")
-n2= input("Informe o 2ª numero:")
-n3= input("Informe o 3ª numero:")
+n1= int(input("Informe o 1ª numero:"))
+n2= int(input("Informe o 2ª numero:"))
+n3= int(input("Informe o 3ª numero:"))
 maior = maior_numero(n1,n2,n3)
 menor = menor_numero(n1,n2,n3)
 print("O maior numero é",maior,"e o menor numero é:",menor)
